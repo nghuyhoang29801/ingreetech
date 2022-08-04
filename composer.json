@@ -1,0 +1,7 @@
+{
+    "name": "leo1_5/erp-system",
+    "description": "'this is web project'",
+    "require": {
+        "ehime/hello-world": "^1.0"
+    }
+}

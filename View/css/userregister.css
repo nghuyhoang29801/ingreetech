@@ -1,0 +1,26 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: white;
+            background-size: cover;
+            background-position: center;
+        }
+        .login-box {
+            max-width: 700px;
+            float: one;
+            margin: 150px auto;
+        }
+        .login-left {
+            background: rgba(211, 211, 211, 0.5);
+            padding: 30px;
+        }
+        .login-right {
+            background: rgba(211, 211, 211, 0.75);
+            padding: 15px;
+        }
+        .form-control {
+            background-color: white; !important;
+        }

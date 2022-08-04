@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer {
+    padding-top: 40px;
+    width: 1440px;
+    height: 350px;
+    display: flex;
+    background-color: #2953FC;
+    justify-content: space-around;
+}
+
+p {
+    color: white;
+}
+
+.footer__h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.mail > p {
+    width: 230px;
+    margin: 24px 0;
+}
+
+.mail .form_mail input {
+    width: 180px;
+    height: 50px;
+}
+
+.form_mail button {
+    height: 47px;
+    width: 47px;
+    border: 0;
+    background-color: #FC0000;
+}
+
+.support ul {
+    margin-top: 24px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.support ul li {
+    margin: 16px 0;
+}
+
+.intro {
+    width: 230px;
+    margin-top: 24px;
+}
+
+.intro p {
+    display: inline;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.email {
+    margin-top: 24px;
+}
+
+.hotline {
+    margin-top: 24px;
+}
+
+.dress {
+    margin-top: 24px;
+}
+
+.dress p {
+    display: inline;
+}
+
+
+.icon {
+    margin-top: 24px;
+}
+
+.icon i {
+    font-size: 50px;
+}
+
+.icon .fa-instagram {
+    color: red;
+}
+
+.icon .fa-facebook {
+    color: darkblue;
+}
+
+.icon .fa-twitter {
+    color: lightblue;
+}
+
+.soctial img {
+    margin-top: 50px;
+    width: 190px;
+}

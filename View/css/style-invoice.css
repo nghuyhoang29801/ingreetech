@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    color: black;
+}
+
+:root {
+    --maincolor: #2953FC;
+    --colortext-maincolor: white;
+    --fontsize: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    font-size: 16px;
+}
+
+#content {
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* phần bên trái */
+
+.nav_info {
+    width: 20%;
+    height: auto;
+    position: relative;
+}
+
+.nav_info .avt_mini {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 28px;
+    padding-left: 28px;
+}
+
+.nav_info .avt_mini img {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.nav_info .avt_mini p {
+    margin: auto;
+    margin-left: 24px;
+}
+
+.nav_info .nav_left {
+    margin-left: 42px;
+}
+
+.nav_info .nav_left .nav {
+    display: block !important;
+    cursor: pointer;
+}
+
+.nav_info .nav_left .nav>li {
+    margin-top: 24px;
+}
+
+.nav_info .nav_left .nav>li:hover>a {
+    color: red;
+}
+
+.nav_info .nav_left .nav>li>a {
+    margin: auto;
+    left: 75px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_info .nav_left .sub_nav {
+    display: none;
+}
+
+.nav_info .nav_left .sub_nav li {
+    margin-left: 50px;
+    margin-top: 12px;
+}
+
+.nav_info .nav_left .sub_nav li>a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav_info .nav_left .sub_nav li:hover>a {
+    color: red;
+}
+
+.nav_info .nav_left .nav>.active>a {
+    color: red;
+}
+
+.nav_info .nav_left .sub_nav .active>a {
+    color: red;
+}
+
+
+/* Phần bên phải*/
+
+#content .right {
+    width: 1040px;
+}
+
+#content .right .tabs {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+#content .right .tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--maincolor);
+    transition: all 0.2s ease;
+}
+
+#content .right .tabs .tab-item {
+    min-width: 80px;
+    padding: 16px 50px 11px 50px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--maincolor);
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#content .right .tabs .tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+#content .right .tabs .tab-item.active {
+    opacity: 1;
+}
+
+#content .right .tab-content {
+    max-width: 1000px;
+}
+
+#content .right .tab-content .tab-pane {
+    display: none;
+}
+
+#content .right .tab-content .tab-pane.active {
+    display: block;
+}
+
+#content .right .tab-content .tab-pane .invoice {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 20px;
+    font-size: var(--fontsize);
+    border: 1px solid black;
+}
+
+#content .right .tab-content .tab-pane .invoice .state {
+    border-bottom: 1px solid black;
+    display: flex;
+    height: 47px;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#content .right .tab-content .tab-pane .invoice .state .print {
+    line-height: 32px;
+    background-color: var(--maincolor);
+    padding: 0 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#content .right .tab-content .tab-pane .invoice .state .print i {
+    padding-left: 8px;
+}
+
+#content .right .tab-content .tab-pane .invoice .item {
+    height: 210px;
+    margin: 10px 30px 0px;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-content {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-content .item-image {
+    width: 80px;
+    height: 100%;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-content .item-image img {
+    width: 100%;
+    height: 100%;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-content .item-description {
+    width: 60%;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-content .item-type,
+.item-amount {
+    font-size: 10px;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-content .item-money {
+    width: 25%;
+    text-align: right;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-sub-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-sub-content .accum-point {
+    font-size: 13px;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-button {
+    margin-top: 22px;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-button .button {
+    margin-left: 22px;
+    padding: 10px 39px;
+    border: 1px solid #d9d9d9;
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-button .button.active {
+    border: 1px solid var(--maincolor);
+    background-color: var(--maincolor);
+}
+
+#content .right .tab-content .tab-pane .invoice .item .item-button .button.active a {
+    color: white;
+}

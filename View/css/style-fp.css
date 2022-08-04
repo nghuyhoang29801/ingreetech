@@ -1,0 +1,66 @@
+:root {
+    --maincolor: #2953FC;
+    --colortext-maincolor: white;
+    --fontsize: 16px;
+}
+
+#contain {
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    align-content: center;
+}
+
+form {
+    padding: 30px 50px;
+    margin: auto;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
+}
+
+form .form-group {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+form .nav {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+form .nav input {
+    background-color: var(--maincolor);
+    border: var(--maincolor) 1px solid;
+    color: white;
+    padding: 5px 30px;
+}
+
+form .nav input:hover {
+    background-color: white;
+    border: var(--maincolor) 1px solid;
+    color: var(--maincolor);
+}
+
+form .nav button {
+    color: #A8A8A8;
+    border: #A8A8A8 0px solid;
+    padding: 5px 20px;
+}
+
+form .nav button:hover {
+    background-color: white;
+    border: #A8A8A8 1px solid;
+}
+
+form .text-list .text {
+    color: #333;
+    display: none;
+}
+
+form .text-list .text.active {
+    display: block;
+}

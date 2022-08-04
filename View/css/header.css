@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 1440px;
+    align-items: center;
+    background-color: #2953FC;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 80px;
+    width: 205px;
+}
+
+img {
+    height: 80px;
+    width: 205px;
+}
+
+.nav {
+    flex: 3;
+    display: flex;
+}
+
+.nav li {
+    display: inline; 
+    
+}
+
+.nav a {
+    color: white;
+    font-size: 1.25em;
+    padding: 30px 17px; 
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.other {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.other .dangnhap {
+    flex: 0;
+    height: 44px;
+    width: 123px;
+    background-color: #FA0000;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 23px;
+    border-radius: 10px;
+}
+.other i {
+    font-size: 1.875em;
+}
+
+.other a {
+    display: flex;
+    color: white;
+    font-size: 1.25em;
+    width: 123px;
+    justify-content: center;
+}

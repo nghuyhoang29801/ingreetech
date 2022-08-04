@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    font-size: 20px;
+}
+
+body {
+    width: 1440px;
+    display: flex;
+    height: 1000px;
+}
+.nav_info {
+    border: 2px solid #000;
+    width: 20%;
+    height: 55%;
+}
+
+.avt_mini {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 28px;
+    padding-left: 28px;
+}
+.avt_mini img {
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width: 60px;
+    height: 60px;
+}
+.avt_mini p {
+    margin: auto;
+    margin-left: 24px;
+}
+.nav_left {
+    margin-left: 42px;
+}
+.nav > li {
+    margin-top: 24px;
+}
+.nav > li > a {
+    margin: auto;
+    position: absolute;
+    left: 75px;
+}
+
+.sub_nav li {
+    margin-left: 50px;
+    margin-top: 12px;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.header_address {
+    display: flex;
+    height: 80px;
+    width: 1050px;
+    border: 1px solid #000;
+}
+.name_header {
+    font-size: 25px;
+    margin: auto 10px;
+}
+.add_address {
+    height: 50px;
+    width: 250px;
+    background-color: #6989C9;
+    color: #fff;
+    font-size: 25px;
+    border: 0;
+    position: absolute;
+    right: 180px;
+    margin-top: 15px;
+}
+form {
+    margin-top: 50px;
+}
+form > div {
+    display: flex;
+}
+form div label {
+    width: 15%;
+    text-align: right;
+}
+form > div div {
+    margin-left: 50px;
+}
+.name .button {
+    width: 20%;
+    text-align: right;
+}
+.name button {
+    text-decoration: underline;
+    border: 0;
+}
+form div {
+    font-size: 25px;
+}
+form label {
+    font-size: 25px;
+}
+.address .button {
+    width: 20%;
+    text-align: right;
+}

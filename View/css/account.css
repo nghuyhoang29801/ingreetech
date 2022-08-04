@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    font-size: 20px;
+}
+
+#account {
+    width: 1440px;
+    display: flex;
+    height: 1000px;
+}
+
+
+/* phần bên trái */
+.nav_info {
+    border: 2px solid #000;
+    width: 20%;
+    height: 55%;
+}
+
+.avt_mini {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 28px;
+    padding-left: 28px;
+}
+
+.avt_mini img {
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width: 60px;
+    height: 60px;
+}
+
+.avt_mini p {
+    margin: auto;
+    margin-left: 24px;
+}
+
+.nav_left {
+    margin-left: 42px;
+}
+
+.nav > li {
+    margin-top: 24px;
+}
+
+.nav > li > a {
+    margin: auto;
+    position: absolute;
+    left: 75px;
+}
+
+.sub_nav li {
+    margin-left: 50px;
+    margin-top: 12px;
+}
+
+
+/*  phần giữa*/
+
+.infomation {
+    width: 50%;
+}
+
+form {
+    margin-top: 56px;
+    margin-left: 125px;
+}
+
+
+.pers_inf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.875rem;
+}
+
+.name_inf {
+    width: 25%;
+    text-align: left;
+} 
+
+.inf {
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inf button {
+    border: 0;
+    color: blue;
+    text-decoration: underline;
+    margin-left: 1rem;
+}
+
+.input_valu {
+    background-color: #000;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    height: 28px;
+}
+
+.input_valu input {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.pers_inf img {
+    width: 245px;
+    height: 150px;
+}
+
+.img_back {
+    margin-left: 20px;
+}
+
+.img_front {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_back {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img p {
+    position: relative;
+    left: 70px;
+    top: 80px;   
+    color: white; 
+}
+
+.save_change button {
+    width: 540px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: #FA0000;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* phần bên phải */
+
+.avatar_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    width: 30%;
+    height: 450px;
+    border: 2px solid;
+}
+
+.avatar_right img {
+    margin-top: 25px;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+.avatar_right button {
+    margin-top: 10px;
+    height: 50px;
+    width: 160px;
+    font-size: 16px;
+}
+
+
+
+

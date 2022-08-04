@@ -1,0 +1,354 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: #2953FC;
+    --colortext-maincolor: white;
+    --fontsize: 16px;
+}
+
+#frame {
+    width: 100%;
+}
+
+#header {
+    background-color: var(--maincolor);
+    height: 50px;
+}
+
+#slider {
+    position: relative;
+}
+
+#slider img {
+    width: 100%;
+}
+
+#slider .slider-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 10;
+}
+
+#slider .slider-dots .slider-dot-item {
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background-color: #999;
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+}
+
+#slider .slider-dots .slider-dot-item.active {
+    background-color: white;
+}
+
+#slider .slide-wrapper {
+    /*overflow: hidden;*/
+    position: relative;
+    height: 500px;
+}
+
+#slider .slide-wrapper .slider-main {
+    height: 100%;
+    display: flex;
+    position: relative;
+    transition: transform 0.25s linear;
+}
+
+#slider .slide-wrapper .slider-main .slider-item {
+    flex: 1 0 100%;
+}
+
+#slider .slide-wrapper .slider-main .slider-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#content .sub-panel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .sub-panel .panel-item {
+    width: 33%;
+}
+
+#content .sub-panel .panel-item img {
+    width: 100%;
+}
+
+#content .best-seller {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#content .best-seller .title {
+    font-size: 28px;
+    color: var(--maincolor);
+    font-weight: bold;
+}
+
+#content .list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#content .list-item .item {
+    width: 19%;
+    position: relative;
+}
+
+#content .list-item .image img {
+    width: 100%;
+}
+
+#content .list-item .image .image-item-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.75s ease;
+}
+
+#content .list-item .image .image-item-2 .button-buy {
+    background-color: red;
+    color: white;
+    font-size: 0.75em;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    word-wrap: break-word;
+}
+
+#content .list-item .image .image-item-2 img {
+    height: 100%;
+}
+
+#content .list-item .image:hover .image-item-2 {
+    opacity: 1;
+}
+
+#content .list-item .image:hover .image-item-1 {
+    visibility: hidden;
+}
+
+#content .list-item .image .image-item-2 .button-buy:hover {
+    opacity: 1;
+    background-color: white;
+    color: red;
+    border: red 1px solid;
+}
+
+#content .new-blogs-list {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#content .new-blogs-list .title {
+    font-size: 28px;
+    color: var(--maincolor);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#content .new-blogs-list .blog-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 260px;
+}
+
+#content .new-blogs-list .blog-list .new-blog {
+    background-color: #D9D9D9;
+    width: 33%;
+    color: #898888;
+    padding-bottom: 10px;
+}
+
+#content .new-blogs-list .blog-list .new-blog .image {
+    height: 30%;
+}
+
+#content .new-blogs-list .blog-list .new-blog img {
+    width: 100%;
+    height: 100%;
+}
+
+#content .new-blogs-list .blog-list .new-blog .content {
+    position: relative;
+    text-align: start !important;
+    height: 70%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+#content .new-blogs-list .blog-list .new-blog .content .title-blog h5 {
+    color: black !important;
+}
+
+#content .new-blogs-list .blog-list .new-blog .content .time-blog {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-top: 2px #898888 solid;
+    padding: 0 10px;
+}
+
+#content .new-blogs-list .blog-list .new-blog .content .time-blog .expand {
+    color: #898888;
+}
+
+#content .product-portfolio {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#content .product-portfolio .title {
+    font-size: 28px;
+    color: var(--maincolor);
+    font-weight: bold;
+}
+
+#content .product-portfolio .tabs {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#content .product-portfolio .tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--maincolor);
+    transition: all 0.2s ease;
+}
+
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--maincolor);
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-item.active {
+    opacity: 1;
+}
+
+#content .product-portfolio .list-item {
+    margin-top: 20px;
+}
+
+#content .product-portfolio .expand-button {
+    border: 1px var(--maincolor) solid;
+    background-color: var(--maincolor);
+    color: white;
+    font-size: var(--fontsize);
+    padding: 8px 40px;
+    background-size: cover;
+    width: 181px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#content .product-portfolio .expand-button:hover {
+    color: var(--maincolor);
+    background-color: white;
+}
+
+#content .about-me {
+    display: flex;
+    margin-top: 20px;
+    height: 800px;
+    position: relative;
+}
+
+#content .about-me .image {
+    background-image: url("../img/about-me.jpeg");
+    width: 50%;
+    border-radius: 20px;
+}
+
+#content .about-me .image .title {
+    margin-top: 192px;
+    margin-left: 64px;
+    font-size: calc(3*var(--fontsize));
+    font-weight: bold;
+    color: var(--maincolor);
+}
+
+#content .about-me .image .expand-button {
+    border: 1px var(--maincolor) solid;
+    background-color: var(--maincolor);
+    color: white;
+    font-size: var(--fontsize);
+    padding: 8px 40px;
+    background-size: cover;
+    text-align: center;
+    width: 181px;
+    margin-left: 96px;
+    margin-top: 31px;
+}
+
+#content .about-me .image .expand-button:hover {
+    color: var(--maincolor);
+    background-color: white;
+}
+
+#content .about-me .text {
+    width: 50%;
+    font-size: var(--fontsize);
+    margin-left: 15px;
+}
+
+#content .about-me .text .title {
+    text-align: center;
+    color: var(--maincolor);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
